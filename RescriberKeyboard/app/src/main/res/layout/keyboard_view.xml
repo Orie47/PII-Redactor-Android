@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboardRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/keyboard_background"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <!-- ── Redaction Control Bar ── -->
+    <LinearLayout
+        android:id="@+id/redactionBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@color/keyboard_background"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <android.widget.Button
+            android:id="@+id/redactPIIButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Rescriber 2.0 Redaction"
+            android:textSize="12sp"
+            android:textColor="@color/accent_text_color"
+            android:background="@drawable/redact_button_background"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:minWidth="160dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type your message..."
+            android:textSize="12sp"
+            android:textColor="@color/key_text_color_secondary"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <!-- ── Modern Android-style keyboard ── -->
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:keyTextColor="@color/key_text_color"
+        android:keyTextSize="18sp"
+        android:labelTextSize="14sp"
+        android:background="@drawable/keyboard_background"
+        android:popupLayout="@layout/popup"
+        android:keyBackground="@drawable/key_background"
+        android:keyPreviewLayout="@layout/key_preview"
+        android:keyPreviewOffset="0dp"
+        android:keyPreviewHeight="80dp" />
+</LinearLayout>

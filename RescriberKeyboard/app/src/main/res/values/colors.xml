@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Modern Android Keyboard Colors -->
+    <color name="keyboard_background">#F5F5F5</color>
+    <color name="key_background_normal">#FFFFFF</color>
+    <color name="key_background_pressed">#E0E0E0</color>
+    <color name="key_text_color">#212121</color>
+    <color name="key_text_color_secondary">#757575</color>
+    <color name="key_preview_text_color">#FFFFFF</color>
+    <color name="key_preview_background">#424242</color>
+    
+    <!-- Accent colors -->
+    <color name="accent_color">#2196F3</color>
+    <color name="accent_color_pressed">#1976D2</color>
+    <color name="accent_text_color">#FFFFFF</color>
+    
+    <!-- Special key colors -->
+    <color name="special_key_background">#E0E0E0</color>
+    <color name="special_key_text">#424242</color>
+    
+    <!-- Legacy colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

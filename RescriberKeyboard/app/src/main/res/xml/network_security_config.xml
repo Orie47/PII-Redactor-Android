@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- HTTPS is allowed by default, no special configuration needed -->
+    <!-- This file is kept for future local development if needed -->
+</network-security-config>
